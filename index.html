@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saru Siri Grocery - Freshness You Can Trust</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><span class="logo-green">Saru</span> <span class="logo-orange">Siri</span></h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2 class="hero-title">Freshness You Can Trust</h2>
+                        <h1 class="hero-headline">Saru Siri Grocery</h1>
+                        <p class="hero-description">Your local source for fresh produce, pantry staples, and everyday essentials. Quality you can taste at prices you'll love.</p>
+                        <a href="#products" class="cta-btn">Shop Now <i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Products</h2>
+                    <p class="section-subtitle">Fresh from local farms to your table</p>
+                </div>
+                <div class="products-grid">
+                    <!-- Product cards will be generated with JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Saru Siri</h2>
+                    <p class="section-subtitle">Your neighborhood grocery store since 2010</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At Saru Siri, we believe that everyone deserves access to fresh, high-quality groceries at fair prices. Founded by local entrepreneur Saman Perera, our store has been serving the community for over a decade with a commitment to freshness, quality, and friendly service.</p>
+                        <p>We source our produce daily from local farmers and suppliers, ensuring you get the freshest fruits, vegetables, and essentials. Our knowledgeable staff is always ready to help you find exactly what you need.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3 class="feature-title">Daily Fresh</h3>
+                            <p class="feature-desc">Fresh produce delivered daily from local farms</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="feature-title">Best Prices</h3>
+                            <p class="feature-desc">Competitive prices without compromising quality</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <h3 class="feature-title">Friendly Service</h3>
+                            <p class="feature-desc">Knowledgeable staff ready to assist you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Location Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Visit Us Today</h2>
+                    <p class="section-subtitle">We're here to serve you</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                            <p>123 Fresh Market Street<br>Colombo 05, Sri Lanka</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-phone"></i> Phone</h3>
+                            <p>+94 112 345 678</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+                            <p>Monday - Saturday: 7:00 AM - 9:00 PM</p>
+                            <p>Sunday: 8:00 AM - 8:00 PM</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-envelope"></i> Email</h3>
+                            <p>hello@sarusiri.lk</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Send us a message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <h3><i class="fas fa-map-marked-alt"></i> Find Us on Google Maps</h3>
+                    <div class="map-container">
+                        <!-- Google Maps Placeholder -->
+                        <div class="map-image">
+                            <p>Google Maps integration would go here</p>
+                            <p><i class="fas fa-map-pin"></i> Saru Siri Grocery, Colombo 05</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span class="logo-green">Saru</span> <span class="logo-orange">Siri</span></h2>
+                    <p>Freshness You Can Trust</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saru Siri Grocery. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for our community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CSS Styles -->
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #2e7d32;
+            --light-green: #4caf50;
+            --dark-green: #1b5e20;
+            --warm-orange: #ff9800;
+            --light-orange: #ffb74d;
+            --white: #ffffff;
+            --light-gray: #f5f5f5;
+            --medium-gray: #757575;
+            --dark-gray: #333333;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--warm-orange);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            margin-top: 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .header.sticky {
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .logo-green {
+            color: var(--primary-green);
+        }
+
+        .logo-orange {
+            color: var(--warm-orange);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-green);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-green);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: var(--dark-gray);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            margin-top: 70px;
+        }
+
+        .hero-overlay {
+            width: 100%;
+            padding: 60px 0;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-title {
+            font-size: 1.8rem;
+            color: var(--light-orange);
+            margin-bottom: 10px;
+        }
+
+        .hero-headline {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--warm-orange);
+            color: var(--white);
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-btn:hover {
+            background-color: var(--light-orange);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn i {
+            margin-left: 10px;
+        }
+
+        /* Products Section */
+        .products {
+            background-color: var(--light-gray);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            height: 180px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--medium-gray);
+        }
+
+        .product-img i {
+            font-size: 3rem;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 1.3rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: var(--warm-orange);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background-color: var(--primary-green);
+            color: var(--white);
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .add-to-cart:hover {
+            background-color: var(--dark-green);
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(46, 125, 50, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .feature-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .info-card h3 {
+            color: var(--dark-green);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card i {
+            color: var(--warm-orange);
+        }
+
+        .contact-form-container {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form-container h3 {
+            color: var(--dark-green);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+        }
+
+        .error-message {
+            color: #e53935;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .submit-btn {
+            background-color: var(--primary-green);
+            color: var(--white);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--dark-green);
+        }
+
+        .map-placeholder {
+            margin-top: 40px;
+        }
+
+        .map-placeholder h3 {
+            color: var(--dark-green);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .map-container {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--medium-gray);
+        }
+
+        .map-image i {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark-green);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-logo h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--warm-orange);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-bottom p {
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom i {
+            color: #ff5252;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 992px) {
+            .hero-headline {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: var(--transition);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                margin: 15px 0;
+            }
+
+            .hero-headline {
+                font-size: 2.5rem;
+            }
+            
+            .hero-title {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .hero-headline {
+                font-size: 2rem;
+            }
+            
+            .hero-description {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Product Data
+        const products = [
+            {
+                id: 1,
+                name: "Fresh Tomatoes",
+                price: "350 LKR/kg",
+                icon: "fas fa-apple-alt",
+                category: "Vegetables"
+            },
+            {
+                id: 2,
+                name: "Coconut Oil",
+                price: "1200 LKR/liter",
+                icon: "fas fa-oil-can",
+                category: "Pantry"
+            },
+            {
+                id: 3,
+                name: "Basmati Rice",
+                price: "450 LKR/kg",
+                icon: "fas fa-seedling",
+                category: "Grains"
+            },
+            {
+                id: 4,
+                name: "Bell Peppers",
+                price: "280 LKR/kg",
+                icon: "fas fa-pepper-hot",
+                category: "Vegetables"
+            },
+            {
+                id: 5,
+                name: "Local Pineapple",
+                price: "320 LKR/kg",
+                icon: "fas fa-pineapple",
+                category: "Fruits"
+            },
+            {
+                id: 6,
+                name: "Red Onions",
+                price: "240 LKR/kg",
+                icon: "fas fa-onion",
+                category: "Vegetables"
+            },
+            {
+                id: 7,
+                name: "Ceylon Tea",
+                price: "800 LKR/250g",
+                icon: "fas fa-mug-hot",
+                category: "Beverages"
+            },
+            {
+                id: 8,
+                name: "Fresh Eggs",
+                price: "35 LKR/egg",
+                icon: "fas fa-egg",
+                category: "Dairy"
+            }
+        ];
+
+        // DOM Elements
+        const header = document.querySelector('.header');
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const productsGrid = document.querySelector('.products-grid');
+        const contactForm = document.getElementById('contactForm');
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Generate product cards
+            generateProductCards();
+            
+            // Set up event listeners
+            setupEventListeners();
+            
+            // Set active nav link based on scroll position
+            window.addEventListener('scroll', setActiveNavLink);
+            
+            // Initial call to set active nav
+            setActiveNavLink();
+        });
+
+        // Generate product cards from products array
+        function generateProductCards() {
+            productsGrid.innerHTML = '';
+            
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-img">
+                        <i class="${product.icon}"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">${product.name}</h3>
+                        <p class="product-price">${product.price}</p>
+                        <button class="add-to-cart" data-id="${product.id}">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                `;
+                
+                productsGrid.appendChild(productCard);
+            });
+            
+            // Add event listeners to "Add to Cart" buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-id');
+                    const product = products.find(p => p.id == productId);
+                    
+                    // Show alert
+                    alert(`Added ${product.name} to your cart!`);
+                    
+                    // Visual feedback
+                    this.innerHTML = '<i class="fas fa-check"></i> Added!';
+                    this.style.backgroundColor = '#4caf50';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+                        this.style.backgroundColor = '';
+                    }, 1500);
+                });
+            });
+        }
+
+        // Set up event listeners
+        function setupEventListeners() {
+            // Mobile menu toggle
+            hamburger.addEventListener('click', toggleMobileMenu);
+            
+            // Close mobile menu when clicking a link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('active')) {
+                        toggleMobileMenu();
+                    }
+                });
+            });
+            
+            // Form submission
+            if (contactForm) {
+                contactForm.addEventListener('submit', handleFormSubmit);
+            }
+            
+            // Sticky header on scroll
+            window.addEventListener('scroll', toggleStickyHeader);
+        }
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Animate hamburger to X
+            const bars = document.querySelectorAll('.bar');
+            if (hamburger.classList.contains('active')) {
+                bars[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+                bars[1].style.opacity = '0';
+                bars[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+            } else {
+                bars[0].style.transform = 'none';
+                bars[1].style.opacity = '1';
+                bars[2].style.transform = 'none';
+            }
+        }
+
+        // Toggle sticky header
+        function toggleStickyHeader() {
+            if (window.scrollY > 100) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        }
+
+        // Set active navigation link based on scroll position
+        function setActiveNavLink() {
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        // Handle form submission
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Reset previous errors
+            resetFormErrors();
+            
+            // Validate form
+            let isValid = true;
+            
+            if (name === '') {
+                showError('nameError', 'Please enter your name');
+                isValid = false;
+            }
+            
+            if (email === '') {
+                showError('emailError', 'Please enter your email');
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                showError('emailError', 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            if (message === '') {
+                showError('messageError', 'Please enter your message');
+                isValid = false;
+            }
+            
+            // If form is valid, show success message and reset form
+            if (isValid) {
+                alert('Thank you for your message! We will get back to you soon.');
+                contactForm.reset();
+            }
+        }
+
+        // Show error message for form validation
+        function showError(elementId, message) {
+            const errorElement = document.getElementById(elementId);
+            errorElement.textContent = message;
+        }
+
+        // Reset all form errors
+        function resetFormErrors() {
+            const errorElements = document.querySelectorAll('.error-message');
+            errorElements.forEach(element => {
+                element.textContent = '';
+            });
+        }
+
+        // Validate email format
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+</html>
